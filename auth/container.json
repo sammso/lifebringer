@@ -1,0 +1,13 @@
+{
+	"id": "auth",
+	"type": "wedeploy/auth",
+	"env": {
+		"WEDEPLOY_AUTH_PASSWORD": "true",
+		"WEDEPLOY_AUTH_GOOGLE": "true",
+		"WEDEPLOY_AUTH_GOOGLE_CLIENT_ID": "327186655382-eupoosgstmjkuf3rt04llekpkp1f4c3i.apps.googleusercontent.com",
+		"WEDEPLOY_AUTH_GOOGLE_CLIENT_SECRET": "XqqITLjqmq18zI1XyMMX3d3h",
+		"WEDEPLOY_AUTH_FACEBOOK": "true",
+		"WEDEPLOY_AUTH_FACEBOOK_CLIENT_ID": "1238138466250161",
+		"WEDEPLOY_AUTH_FACEBOOK_CLIENT_SECRET": "214647c26126bd69923cd145537b88a7"
+	}
+}

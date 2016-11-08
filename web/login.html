@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lifebringer :: Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:900,700,600,400,300">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<!--
+    <link rel="stylesheet" type="text/css" href="assets/style/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/fonts/galano/galano.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/fonts/icon-12/icon-12.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/fonts/icon-16/icon-16.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/main.css">
+-->
+</head>
+<body>
+
+<div class="bg-red"></div>
+
+<header class="grid-login">
+    <div class="content-header">
+        <h1>Login into your account</h1>
+    </div>
+</header>
+
+<main class="grid-login">
+    <!--
+        <button class="btn btn-social btn-facebook" type="button" onclick="signInWithFacebook();">
+            <div class="btn-content">
+                <span class="icon-16-facebook"></span>
+                <span class="btn-label">Login with Facebook</span>
+            </div>
+        </button>
+    -->
+        <button class="btn btn-social btn-google" type="button" onclick="signInWithGoogle();">
+            <div class="btn-content">
+                <span class="icon-google"></span>
+                <span class="btn-label">Login with Google</span>
+            </div>
+        </button>
+
+</main>
+
+<script src="http://cdn.wedeploy.com/api/latest/wedeploy.js"></script>
+<script>
+    var auth = WeDeploy.auth('auth.lifebringer.wedeploy.io');
+
+    function signInWithGoogle() {
+        var googleProvider = new auth.provider.Google();
+        googleProvider.setProviderScope('email');
+        auth.signInWithRedirect(googleProvider);
+    }
+
+    function signInWithFacebook() {
+        var githubProvider = new auth.provider.Facebook();
+        githubProvider.setProviderScope('email');
+        auth.signInWithRedirect(githubProvider);
+    }
+
+    auth.onSignIn(function(user) {
+        location.href = '/index.html';
+    });
+</script>
+</body>
+</html>
