@@ -2,7 +2,7 @@
 
 ![Ray's Lifebringer](https://raw.githubusercontent.com/sammso/lifebringer/master/web/assets/sprites/logo-720.png)
 
-Ray's Lifebringer is a game inspired by the the life giving atmosphere at Liferay, Inc. Go ahead and save the world by bringing all the zombies back to life.
+Ray's Lifebringer is a game inspired by the life giving atmosphere at Liferay, Inc. Go ahead and save the world by bringing all the zombies back to life.
 
 ## How to play!
 
